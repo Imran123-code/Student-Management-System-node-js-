@@ -111,9 +111,62 @@ body {
         text-align: center;
     }
 }
+/* HOME SECTION */
 
+.homeContainer{
+    display: flex;
+    justify-content:space-between;
+    padding: 60px 80px;
+    align-items: center;
+    gap: 30px;
+    
+}
+.contentSection{
+    width: 40%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.AppName{
+    color: white;
+    border: 1px solid rgb(196, 191, 191);
+    background-color: #818cf8;
+    border-radius: 12px;
+    width:fit-content;
+    padding: 10px;
+    font-size: 17px;
+}
 
+.bigContent{
+    font-size: 24px;
+}
 
+.smallContent{
+    font-size: 20px;
+}
+.buttonsCont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttonsCont button{
+    font-size: 21px;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid blue;
+    color: blue;
+}
+.buttonsCont button:hover{
+    background-color: blue;
+}
+.logoSection image{
+    
+}
 /* REGISTRATION FORM */
 
 

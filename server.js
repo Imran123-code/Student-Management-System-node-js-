@@ -56,6 +56,19 @@ http.createServer((req, res) => {
 
         return
     }
+    // image request 
+    if (req.url === '/Assets/logo.png') {
+        fs.readFile(path.join(__dirname, 'Assets', 'logo.png'), (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'content-type': 'plain/text' })
+                res.end("Image not found")
+                return
+            }
+            res.writeHead(200, { 'content-type': 'image/png' })
+            res.end(data)
+        })
+        return
+    }
     // READS HTML DATA
     if (req.url !== '/public/style.css') {
         fs.readFile(file, 'utf-8', (err, data) => {
@@ -81,6 +94,7 @@ http.createServer((req, res) => {
             }
         })
     }
+
 }).listen(9100, () => {
     console.log("Server running at http://localhost:9100")
 });
