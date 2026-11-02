@@ -164,12 +164,63 @@ body {
 .buttonsCont button:hover{
     background-color: blue;
 }
-.logoSection image{
-    
+.logoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    width: 60%;
+
+}
+.lowerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+    margin: 30px;
+}
+
+.lowerSection .lower1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    width: 33.33%;
+    height: 135px;
+    padding: 20px;
+    background-color: #eaf2ff;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.lower1 .logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.lower1 .lContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.lContent .p1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #17213d;
+    margin: 0;
+}
+
+.lContent p {
+    font-size: 15px;
+    color: #647087;
+    margin: 0;
 }
 /* REGISTRATION FORM */
-
-
 .regForm{
     display: flex;
     justify-content: center;
