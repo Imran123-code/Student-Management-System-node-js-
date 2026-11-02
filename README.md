@@ -69,7 +69,7 @@ node app.js
 4. Open your browser and visit:
 
 ```text
-http://localhost:3000
+http://localhost:9100
 ```
 
 ## 📚 Concepts Practiced
