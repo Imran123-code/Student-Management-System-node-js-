@@ -221,50 +221,61 @@ body {
     margin: 0;
 }
 /* REGISTRATION FORM */
-.regForm{
+.regForm {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5ff;
 }
 
-#myForm{
+#myForm {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
-    width: auto;
-    background-color: rgb(131, 125, 125);
-    padding: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border-radius: 12px;
+    gap: 20px;
+    width: 500px;
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(35, 35, 80, 0.08);
 }
 
-#myForm input{
-    height: 60px;
-    width: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#myForm input {
+    height: 55px;
+    width: 100%;
     padding-left: 15px;
-    border-radius: 12px;
-    border-style: none;
-    border: 1px solid gray;
+    border-radius: 10px;
+    border: 1px solid #d8d5f0;
+    background-color: #fafaff;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
 }
 
-#myForm button{
+#myForm input:focus {
+    border-color: #6635e8;
+    box-shadow: 0 0 5px rgba(102, 53, 232, 0.2);
+}
+
+#myForm button {
     border: none;
-    background:none;
-    border: 1px solid rgb(170, 157, 157);
-    border-radius: 12px;
-    padding: 10px 20px;
+    background: linear-gradient(135deg, #7040ee, #5426d5);
+    color: white;
+    border-radius: 10px;
+    padding: 14px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-#myForm button:hover{
-    background-color: #6366f1;
+#myForm button:hover {
+    background: #4520bd;
+    transform: translateY(-2px);
 }
-
 
 /* STUDENRS SECTION  */
 .student-container {
