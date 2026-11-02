@@ -34,15 +34,11 @@ http.createServer((req, res) => {
     }
     // GET METHOD
     if (req.method === 'GET' && req.url === '/students-data') {
-
         let students = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
-
         res.writeHead(200, { 'content-type': 'application/json' })
         res.end(JSON.stringify(students))
-
         return
     }
-
     // run our js
     if (req.url === '/public/script.js') {
 

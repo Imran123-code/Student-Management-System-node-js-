@@ -1,6 +1,7 @@
 fetch('/students-data')
     .then(res => res.json())
     .then(data => {
+        console.log(data)
         let studentContainer = document.getElementById('studentContainer')
         let cards = data.map((student) => {
             return `
